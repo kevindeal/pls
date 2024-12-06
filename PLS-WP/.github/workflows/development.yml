@@ -1,0 +1,35 @@
+name: Deploy Development to WP Engine
+on:
+  push:
+    branches:
+     - development
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - uses: actions/checkout@v4
+    
+    - name: Use Node.js 18
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+        cache: 'npm'
+    - run: npm install
+    - run: npm run dev
+    
+        # Deploy Options
+    - name: GitHub Action Deploy to WP Engine
+      uses: wpengine/github-action-wpe-site-deploy@v3.0
+      with:
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
+        WPE_ENV: plsdev1dev
+        # Deploy Options
+        # Deploy Options
+        REMOTE_PATH: "wp-content/themes/PLS-WP/" 
+        FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from=.deployignore
+    
+    - name: Composer Install
+      run: rm -rf composer.lock && composer install --optimize-autoloader --no-dev --no-progress
+

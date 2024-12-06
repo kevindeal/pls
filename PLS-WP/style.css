@@ -1,0 +1,178 @@
+/*
+Theme Name: PLS Theme
+Theme URI: https://github.com/studioscience/wordpress-starter
+Author: Studio Science
+Author URI: https://studioscience.com
+Description: Studio Science WordPress Starter with react blocks
+Version: 4.1.1
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: sswps
+*/
+
+
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Tailwind pl-4 */
+    padding-right: 1rem; /* Tailwind pr-4 */
+    background: #EFEFF1;
+}
+
+.site-content {
+    background: #EFEFF1;
+}
+
+/* Shop Menu */
+#menu-shop {
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    padding-left: 5em;
+}
+
+#menu-shop li{
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    gap: 0.25rem; /* Tailwind space-x-1 */
+    padding: 0.5rem 1rem; /* Tailwind py-2 px-4 */
+    transition: background-color 0.15s ease-in-out;
+    border-bottom: 4px solid white;
+}
+
+#menu-shop li:hover {
+    background-color: #EFEFF1;
+    background-opacity: 25%;
+    border-bottom-color: #BDDCFA; /* Replace with actual color code */
+}
+
+#menu-shop li.current-menu-item {
+    border-bottom-color: #0A519A; /* Replace with actual color code */
+    color: #0A519A; /* Replace with actual color code */
+}
+
+/* Primary Menu */
+#menu-category, #menu-product-course, #menu-homepage-no-auth {
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    padding-left: 5em;
+}
+
+#menu-homepage-no-auth li{
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    gap: 0.25rem; /* Tailwind space-x-1 */
+    padding: 0.5rem 1rem; /* Tailwind py-2 px-4 */
+    transition: background-color 0.15s ease-in-out;
+    border-bottom: 4px solid white;
+}
+
+#menu-homepage-no-auth li:hover {
+    background-color: #EFEFF1;
+    background-opacity: 25%;
+    border-bottom-color: #BDDCFA; /* Replace with actual color code */
+}
+
+#menu-homepage-no-auth li.current-menu-item {
+    border-bottom-color: #0A519A; /* Replace with actual color code */
+    color: #0A519A; /* Replace with actual color code */
+}
+
+/* Homepage Quick Links Menu */
+#menu-homepage-links {
+    width: 100%;
+    background-color: #EFEFF1;
+    display: inline-flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    
+}
+#menu-homepage-links li {
+    margin: 0 1rem; /* Tailwind mx-4 */
+
+}
+
+.current-menu-item:hover {
+    border-bottom-color: #0A519A; /* Replace with actual color code */
+}
+
+/* Product Page Menu */
+#menu-product-course {
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+}
+
+#menu-product-course li{
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    gap: 0.25rem; /* Tailwind space-x-1 */
+    padding: 0.5rem 1rem; /* Tailwind py-2 px-4 */
+    transition: background-color 0.15s ease-in-out;
+    border-bottom: 4px solid white;
+}
+
+#menu-product-course li:hover {
+    background-color: #EFEFF1;
+    background-opacity: 25%;
+    border-bottom-color: #BDDCFA; /* Replace with actual color code */
+}
+
+#menu-product-course li.current-menu-item {
+    border-bottom-color: #0A519A; /* Replace with actual color code */
+    color: #0A519A; /* Replace with actual color code */
+}
+
+#menu-product-course .current-menu-item li {
+    border-bottom-color: #0A519A; /* Replace with actual color code */
+    color: #0A519A; /* Replace with actual color code */
+}
+
+.current-menu-item:hover {
+    border-bottom-color: #0A519A; /* Replace with actual color code */
+}
+
+.woocommerce-product-gallery {
+    max-height: 200px;
+}
+
+
+/* Hide Category Title */
+.woocommerce .entry-title {
+    display: none;
+  }
+
+.woocommerce .columns-3 {
+    padding-top: 2em;
+}
+
+.woocommerce-product-gallery .woocommerce-product-gallery--with-images {
+	display:none;
+	
+}
+
+.woocommerce ul.products li.product  {
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+    font-weight: 600;
+}
+
+.woocommerce ul.products li.product a img {
+    height: 200px; /* Adjust the height as needed */
+    contain: content;
+    border-radius: 5px 5px 5px 5px; /* top-left, top-right, bottom-right, bottom-left */
+}

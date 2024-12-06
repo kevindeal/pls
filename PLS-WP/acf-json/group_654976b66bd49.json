@@ -1,0 +1,95 @@
+{
+    "key": "group_654976b66bd49",
+    "title": "Agencies",
+    "fields": [
+        {
+            "key": "field_654b0545d05bf",
+            "label": "Agency Name",
+            "name": "agency_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_654b0557d05c0",
+            "label": "Agency Members",
+            "name": "agency_members",
+            "aria-label": "",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "return_format": "array",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_654b06c0c7c74",
+            "label": "Client Group Admin",
+            "name": "client_group_admin",
+            "aria-label": "",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": [
+                "administrator",
+                "client_group_admin"
+            ],
+            "return_format": "array",
+            "multiple": 1,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "subgroup"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "client-group-type:agency"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1699949356
+}

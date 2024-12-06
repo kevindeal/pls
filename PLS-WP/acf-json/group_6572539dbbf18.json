@@ -1,0 +1,560 @@
+{
+    "key": "group_6572539dbbf18",
+    "title": "Enrollment Fields",
+    "fields": [
+        {
+            "key": "field_6572539dffdf8",
+            "label": "Enrollment Status",
+            "name": "enrollment_status",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "active": "Active",
+                "inactive": "Inactive",
+                "paused": "Paused"
+            },
+            "default_value": "paused",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_657254af93234",
+            "label": "Enrolling Subgroup",
+            "name": "enrolling_subgroup",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "subgroup"
+            ],
+            "post_status": "",
+            "taxonomy": [
+                "client-group-type:subgroup"
+            ],
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6572541d93231",
+            "label": "Enrolled User",
+            "name": "enrolled_user",
+            "aria-label": "",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": [
+                "subscriber"
+            ],
+            "return_format": "array",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_65727f7906c49",
+            "label": "Course",
+            "name": "course",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "acf-course"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6572547a93233",
+            "label": "Subscription",
+            "name": "subscription",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "acf-subscription"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_65725b59e0af9",
+            "label": "Creation Date",
+            "name": "creation_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_6572545093232",
+            "label": "Enrollment Start Date",
+            "name": "enrollment_start_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_65725b13e0af8",
+            "label": "Enrollment End Date",
+            "name": "enrollment_end_date",
+            "aria-label": "",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 0
+        },
+        {
+            "key": "field_6572761eeb7e0",
+            "label": "Learning Records",
+            "name": "learning_records",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 1,
+            "rows_per_page": 1,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Lesson",
+            "sub_fields": [
+                {
+                    "key": "field_65727647eb7e1",
+                    "label": "Lesson",
+                    "name": "lesson",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "acf-lesson"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "object",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_657502487d497",
+                    "label": "Access Release Date",
+                    "name": "access_release_date",
+                    "aria-label": "",
+                    "type": "date_time_picker",
+                    "instructions": "The datetime when this lesson begins to be available to the student",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "F j, Y g:i a",
+                    "return_format": "m\/d\/Y g:i a",
+                    "first_day": 0,
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_65727880eb7e7",
+                    "label": "Passing Grade",
+                    "name": "passing_grade",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Passing %",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 80,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "%",
+                    "step": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_65aef0b6c9fc8",
+                    "label": "Current Registration ID",
+                    "name": "current_registration_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_657276f0eb7e2",
+                    "label": "Lesson Start Time",
+                    "name": "lesson_start_time",
+                    "aria-label": "",
+                    "type": "date_time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "F j, Y g:i a",
+                    "return_format": "m\/d\/Y g:i a",
+                    "first_day": 0,
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_6572783deb7e6",
+                    "label": "Lesson End Time",
+                    "name": "lesson_end_time",
+                    "aria-label": "",
+                    "type": "date_time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "m\/d\/Y g:i a",
+                    "return_format": "F j, Y g:i a",
+                    "first_day": 0,
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_6574ff9de7a50",
+                    "label": "Lesson Events",
+                    "name": "lesson_events",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "Event time, Event Type, Event Data JSON",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "field_6574ffbbe7a51",
+                    "button_label": "Add Event",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_6572761eeb7e0",
+                    "sub_fields": [
+                        {
+                            "key": "field_6574ffbbe7a51",
+                            "label": "Event Time",
+                            "name": "event_time",
+                            "aria-label": "",
+                            "type": "date_time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "F j, Y g:i a",
+                            "return_format": "m\/d\/Y g:i a",
+                            "first_day": 0,
+                            "parent_repeater": "field_6574ff9de7a50"
+                        },
+                        {
+                            "key": "field_6574ffe6e7a52",
+                            "label": "Event Type",
+                            "name": "event_type",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6574ff9de7a50"
+                        },
+                        {
+                            "key": "field_65750006e7a53",
+                            "label": "Event Data",
+                            "name": "event_data",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6574ff9de7a50"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_65727800eb7e5",
+                    "label": "Completed",
+                    "name": "completed",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "Has Student Completed This Lesson?",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_65baaa3d57f41",
+                    "label": "Completed Score",
+                    "name": "completed_score",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_657654c54d35c",
+                    "label": "dump",
+                    "name": "dump",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_65c6fc20e7476",
+                    "label": "totalSecondsTracked",
+                    "name": "totalSecondsTracked",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6572761eeb7e0"
+                },
+                {
+                    "key": "field_65cd23ba9e76b",
+                    "label": "Awarded Certificate",
+                    "name": "awarded_certificate",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "certificate"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "object",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_6572761eeb7e0"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "enrollment"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1707942887
+}

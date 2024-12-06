@@ -1,0 +1,110 @@
+{
+    "key": "group_65cd29bd92663",
+    "title": "Certificate Fields",
+    "fields": [
+        {
+            "key": "field_65cd29bdd0d4a",
+            "label": "User",
+            "name": "user",
+            "aria-label": "",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "return_format": "array",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_65cd29e5d0d4b",
+            "label": "Certificate ID",
+            "name": "certificate_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65cd2a03d0d4c",
+            "label": "Awarded Date",
+            "name": "awarded_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/Y g:i a",
+            "return_format": "m\/d\/Y g:i a",
+            "first_day": 0
+        },
+        {
+            "key": "field_65cd2a430fbd5",
+            "label": "Enrollment",
+            "name": "enrollment",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "enrollment"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "certificate"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1707944598
+}

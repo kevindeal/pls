@@ -1,0 +1,40 @@
+cl# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Node ignores
+/node_modules/
+npm-debug.log
+yarn-error.log
+# yarn.lock
+# package-lock.json
+
+
+# Configuration
+wp-config.php
+
+
+# Example plugin
+# /wp-content/plugins/hello.php
+
+# Uploads
+# /wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+# Composer ignores
+vendor/
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes

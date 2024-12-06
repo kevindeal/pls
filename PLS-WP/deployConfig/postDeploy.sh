@@ -1,0 +1,1 @@
+ls && pwd && composer install --optimize-autoloader --no-dev --no-progress

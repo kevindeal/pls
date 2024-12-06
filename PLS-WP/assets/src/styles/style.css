@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '/assets/dist/css/gutenberg.css';
+
+.product-banner {
+  color: #000; /* Text color */
+  padding:10px 10px; /* Adjust padding as needed */
+  position: relative;
+  z-index: 100;
+  top: 0px;
+}
+
+.shop .product-banner {
+  color: #000; /* Text color */
+  padding:10px 10px; /* Adjust padding as needed */
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+}
+
+.shop-global-banner {
+  width: 100%;
+  color: #000; /* Text color */
+  padding:10px 10px; /* Adjust padding as needed */
+  z-index: 100;
+  top: 0;
+  display: flex;
+}
+
+.woocommerce-Tabs-panel ul {
+  columns: 2;
+  column-gap: 20px;
+}
+
+.woocommerce-Tabs-panel li {
+  list-style: disc !important;
+  margin-bottom: 5px;
+}
+
+.flag-icon {
+  height: 48px;
+}
+
+.wc-block-components-product-price__value.is-discounted {
+  font-size: large;
+}
+
+.wc-block-components-formatted-money-amount {
+  font-size: large;
+}
+
+.wc-block-components-totals-discount .wc-block-components-totals-item__value {
+  font-size: large;
+}
+
+.woocommerce ul.products li.product .price {
+  color: #16670F;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #16670F;
+}

@@ -1,0 +1,29 @@
+name: Deploy MAIN to WP Engine - PLS Env
+on:
+  push:
+    branches:
+     - main
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - uses: actions/checkout@v3
+    
+    - name: Use Node.js 18
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: 'npm'
+    - run: npm install
+    - run: npm run dev
+    
+    - name: GitHub Action Deploy to WP Engine
+      uses: wpengine/github-action-wpe-site-deploy@v3.0
+      with:
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_MAIN_DEPLOY_PRIVATE }}
+        WPE_ENV: plslmsdev
+        # Deploy Options
+        REMOTE_PATH: "wp-content/themes/PLS-WP/" 
+        FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from=.deployignore

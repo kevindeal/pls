@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/app.asset.php": "/js/app.asset.php",
+    "/js/admin.js": "/js/admin.js",
+    "/js/admin.asset.php": "/js/admin.asset.php",
+    "/js/gutenberg.js": "/js/gutenberg.js",
+    "/js/gutenberg.asset.php": "/js/gutenberg.asset.php",
+    "/css/style.css": "/css/style.css",
+    "/css/gutenberg.css": "/css/gutenberg.css"
+}
